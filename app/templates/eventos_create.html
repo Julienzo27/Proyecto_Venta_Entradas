@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Nuevo Evento{% endblock %}
+{% block content %}
+  <h2>Nuevo Evento</h2>
+  <form action="/eventos/create" method="post">
+    <label>Nombre <input name="nombre" required></label>
+    <label>Fecha <input name="fecha" placeholder="YYYY-MM-DD" required></label>
+    <label>Sala <input name="sala" required></label>
+    <label>Cupo <input name="cupo" type="number" min="1" required></label>
+    <button type="submit">Crear</button>
+    <a href="/eventos">Cancelar</a>
+  </form>
+{% endblock %}

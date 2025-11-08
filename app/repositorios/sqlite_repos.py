@@ -1,8 +1,8 @@
 import sqlite3
 from typing import List, Optional
-from domain.evento.evento import Evento
-from domain.cliente.cliente import Cliente
-from domain.entrada.entrada import Entrada
+from app.domain.evento.evento import Evento
+from app.domain.cliente.cliente import Cliente
+from app.domain.entrada.entrada import Entrada
 from repositorios.irepos import IEventoRepo, IClienteRepo, IEntradaRepo
 
 

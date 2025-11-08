@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Eliminar Cliente{% endblock %}
+{% block content %}
+  <h2>Eliminar Cliente #{{ cliente.id_cliente }}</h2>
+  <p>¿Confirmás eliminar al cliente <strong>{{ cliente.nombre }}</strong>?</p>
+  <form action="/clientes/delete/{{ cliente.id_cliente }}" method="post">
+    <button type="submit">Sí, eliminar</button>
+    <a href="/clientes">No, cancelar</a>
+  </form>
+{% endblock %}

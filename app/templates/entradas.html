@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Entradas</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+  <h1>Entradas</h1>
+  <a href="/">Volver</a>
+
+  <h2>Emitir entrada</h2>
+  <form action="/entradas/emitir" method="post">
+    <label>ID Evento <input name="id_evento" required></label>
+    <label>ID Cliente <input name="id_cliente" required></label>
+    <label>Precio <input name="precio" required></label>
+    <button type="submit">Emitir</button>
+  </form>
+
+  <h2>Entradas por Evento</h2>
+  {% for e in eventos %}
+    <h3>{{ e.nombre }} (ID {{ e.id_evento }})</h3>
+    <table>
+      <thead><tr><th>ID Entrada</th><th>Cliente</th><th>Precio</th><th>Estado</th></tr></thead>
+      <tbody>
+        {% for ent in entradas_por_evento[e.id_evento] %}
+        <tr>
+          <td>{{ ent.id_entrada }}</td>
+          <td>{{ ent.id_cliente }}</td>
+          <td>{{ ent.precio }}</td>
+          <td>{{ ent.estado }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endfor %}
+
+</body>
+</html>
