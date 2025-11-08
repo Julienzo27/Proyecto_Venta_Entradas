@@ -5,8 +5,8 @@ from servicios.servicio_entradas import ServicioEntradas
 from exceptions.custom_error import CupoAgotadoError, EntradaDuplicadaError, DatoInvalidoError
 
 app = Flask(__name__)
-# Use SECRET_KEY from environment (set via Replit secrets) or fallback to dev key
-app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret')
+# Use SESSION_SECRET from Replit environment or fallback to dev key
+app.secret_key = os.environ.get('SESSION_SECRET', 'dev-secret')
 
 db_path = 'db.sqlite3'
 evento_repo = SqliteEventoRepo(db_path)
