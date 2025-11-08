@@ -1,1 +1,1 @@
-run = "python create_db.py && python app.py"
+run = "python start_repl.py"

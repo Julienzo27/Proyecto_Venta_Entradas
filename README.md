@@ -1,5 +1,7 @@
 # Proyecto Venta de Entradas
 
+[![CI](https://github.com/Julienzo27/Proyecto_Venta_Entradas/actions/workflows/ci.yml/badge.svg)](https://github.com/Julienzo27/Proyecto_Venta_Entradas/actions)
+
 Este repositorio contiene un prototipo de sistema de ventas de entradas (Flask + SQLite) organizado en tres capas: dominio, repositorios y servicios. El proyecto ya está preparado para desplegar en Replit.
 
 Este README explica exactamente los comandos (PowerShell) para ejecutar localmente, publicar en GitHub y luego importar el proyecto en Replit.
