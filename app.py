@@ -5,7 +5,8 @@ from servicios.servicio_entradas import ServicioEntradas
 from exceptions.custom_error import CupoAgotadoError, EntradaDuplicadaError, DatoInvalidoError
 
 # Serve CSS from the existing `css/` directory at URL path `/css/...`
-app = Flask(__name__, static_folder='css', static_url_path='/css')
+# Serve `/css/...` from the `static/css/` folder
+app = Flask(__name__, static_folder='static', static_url_path='/css')
 # Use SESSION_SECRET from Replit environment or fallback to dev key
 app.secret_key = os.environ.get('SESSION_SECRET', 'dev-secret')
 
