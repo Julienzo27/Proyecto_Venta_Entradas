@@ -1,0 +1,241 @@
+        <section class="tab-pane" id="pane-clientes">
+          <div class="card">
+            <div class="actions">
+              <a class="btn primary" href="#modal-cliente-nuevo">➕ Nuevo Cliente</a>
+            </div>
+            <div class="hr"></div>
+            <div class="table-wrap">
+              <table aria-label="Clientes">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Ana Gómez</td>
+                    <td>ana.gomez@mail.com</td>
+                    <td>
+                      <a class="btn" href="#modal-cliente-edit-1">Editar</a>
+                      <a class="btn danger" href="#modal-cliente-del-1">Eliminar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Benito Pérez</td>
+                    <td>benito.perez@mail.com</td>
+                    <td>
+                      <a class="btn" href="#modal-cliente-edit-2">Editar</a>
+                      <a class="btn danger" href="#modal-cliente-del-2">Eliminar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Carla Díaz</td>
+                    <td>carla.diaz@mail.com</td>
+                    <td>
+                      <a class="btn" href="#modal-cliente-edit-3">Editar</a>
+                      <a class="btn danger" href="#modal-cliente-del-3">Eliminar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Darío Castro</td>
+                    <td>dario.castro@mail.com</td>
+                    <td>
+                      <a class="btn" href="#modal-cliente-edit-4">Editar</a>
+                      <a class="btn danger" href="#modal-cliente-del-4">Eliminar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Elena Ruiz</td>
+                    <td>elena.ruiz@mail.com</td>
+                    <td>
+                      <a class="btn" href="#modal-cliente-edit-5">Editar</a>
+                      <a class="btn danger" href="#modal-cliente-del-5">Eliminar</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>   
+
+  <!-- ===================== MODALES CLIENTES ===================== -->
+  <section class="modal" id="modal-cliente-nuevo">
+    <div class="dialog">
+      <header><h3>Nuevo Cliente</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Nombre <input type="text" placeholder="Nombre del cliente"></label>
+            <label>Email <input type="text" placeholder="email@ejemplo.com"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cerrar</a>
+        <a class="btn ok" href="#">Guardar (simulado)</a>
+      </footer>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-cliente-edit-1">
+    <div class="dialog">
+      <header><h3>Editar Cliente #1</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Nombre <input type="text" value="Ana Gómez"></label>
+            <label>Email <input type="text" value="ana.gomez@mail.com"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cancelar</a>
+        <a class="btn ok" href="#">Guardar cambios</a>
+      </footer>
+    </div>
+  </section>    
+
+  <section class="modal" id="modal-cliente-del-1">
+    <div class="dialog">
+      <header><h3>Eliminar Cliente #1</h3></header>
+      <div class="content">
+        ¿Confirmás eliminar el cliente <strong>Ana Gómez</strong>?
+      </div>
+      <footer>
+        <a class="btn" href="#">No</a>
+        <a class="btn danger" href="#">Sí, eliminar</a>
+      </footer>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-cliente-edit-2">
+    <div class="dialog">
+      <header><h3>Editar Cliente #2</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Nombre <input type="text" value="Benito Pérez"></label>
+            <label>Email <input type="text" value="benito.perez@mail.com"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cancelar</a>
+        <a class="btn ok" href="#">Guardar cambios</a>
+      </footer>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-cliente-del-2">
+    <div class="dialog">
+      <header><h3>Eliminar Cliente #2</h3></header>
+      <div class="content">
+        ¿Confirmás eliminar el cliente <strong>Benito Pérez</strong>?
+      </div>
+      <footer>
+        <a class="btn" href="#">No</a>
+        <a class="btn danger" href="#">Sí, eliminar</a>
+      </footer>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-cliente-edit-3">
+    <div class="dialog">
+      <header><h3>Editar Cliente #3</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Nombre <input type="text" value="Carla Diaz"></label>
+            <label>Email <input type="text" value="carla.diaz@mail.com"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cancelar</a>
+        <a class="btn ok" href="#">Guardar cambios</a>
+      </footer>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-cliente-del-3">
+    <div class="dialog">
+      <header><h3>Eliminar Cliente #3</h3></header>
+      <div class="content">
+        ¿Confirmás eliminar el cliente <strong>Carla Diaz</strong>?
+      </div>
+      <footer>
+        <a class="btn" href="#">No</a>
+        <a class="btn danger" href="#">Sí, eliminar</a>
+      </footer>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-cliente-edit-4">
+    <div class="dialog">
+      <header><h3>Editar Cliente #4</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Nombre <input type="text" value="Dario Castro"></label>
+            <label>Email <input type="text" value="dario.castro@mail.com"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cancelar</a>
+        <a class="btn ok" href="#">Guardar cambios</a>
+      </footer>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-cliente-del-4">
+    <div class="dialog">
+      <header><h3>Eliminar Cliente #4</h3></header>
+      <div class="content">
+        ¿Confirmás eliminar el cliente <strong>Dario Castro</strong>?
+      </div>
+      <footer>
+        <a class="btn" href="#">No</a>
+        <a class="btn danger" href="#">Sí, eliminar</a>
+      </footer>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-cliente-edit-5">
+    <div class="dialog">
+      <header><h3>Editar Cliente #5</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Nombre <input type="text" value="Elena Ruiz"></label>
+            <label>Email <input type="text" value="elena.ruiz@mail.com"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cancelar</a>
+        <a class="btn ok" href="#">Guardar cambios</a>
+      </footer>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-cliente-del-5">
+    <div class="dialog">
+      <header><h3>Eliminar Cliente #5</h3></header>
+      <div class="content">
+        ¿Confirmás eliminar el cliente <strong>Elena Ruiz</strong>?
+      </div>
+      <footer>
+        <a class="btn" href="#">No</a>
+        <a class="btn danger" href="#">Sí, eliminar</a>
+      </footer>
+    </div>
+  </section>

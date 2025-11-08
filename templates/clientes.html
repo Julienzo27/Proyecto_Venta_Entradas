@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Clientes{% endblock %}
+{% block content %}
+  <h2>Nuevo Cliente</h2>
+  <form action="/clientes/create" method="post">
+    <label>Nombre <input name="nombre" required></label>
+    <label>Email <input name="email" required></label>
+    <button type="submit">Crear</button>
+  </form>
+
+  <h2>Listado</h2>
+  <table>
+    <thead>
+      <tr><th>ID</th><th>Nombre</th><th>Email</th><th>Acciones</th></tr>
+    </thead>
+    <tbody>
+      {% for c in clientes %}
+      <tr>
+        <td>{{ c.id_cliente }}</td>
+        <td>{{ c.nombre }}</td>
+        <td>{{ c.email }}</td>
+        <td>
+          <a href="/clientes/edit/{{ c.id_cliente }}">Editar</a>
+          <a href="/clientes/delete/{{ c.id_cliente }}">Eliminar</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

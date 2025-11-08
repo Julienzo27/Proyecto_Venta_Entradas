@@ -1,0 +1,270 @@
+        
+        <section class="tab-pane" id="pane-entradas">
+          <div class="card">
+            <div class="actions">
+              <a class="btn primary" href="#modal-entrada-create">➕ Nueva Entrada</a>              
+            </div>
+            <div class="hr"></div>
+            <div class="table-wrap">
+              <table aria-label="Entradas">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Evento</th>
+                    <th>Cliente</th>
+                    <th>Precio</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td><td>Concierto Rock Local</td><td>Ana Gómez</td><td>15.50</td><td>emitida</td>
+                    <td><span class="status-pill ok">emitida</span></td>
+                    <td>
+                      <a class="btn" href="#modal-entrada-edit-1">Editar</a>
+                      <a class="btn danger" href="#modal-entrada-del-1">Eliminar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td><td>Obra Teatro Clásico</td><td>Benito Pérez</td><td>25.00</td><td>emitida</td>
+                    <td><span class="status-pill ok">emitida</span></td>
+                    <td>
+                      <a class="btn" href="#modal-entrada-edit-2">Editar</a>
+                      <a class="btn danger" href="#modal-entrada-del-2">Eliminar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td><td>Stand-up Comedy Show</td><td>Carla Díaz</td><td>10.00</td><td>emitida</td>
+                    <td><span class="status-pill ok">emitida</span></td>
+                    <td>
+                      <a class="btn" href="#modal-entrada-edit-3">Editar</a>
+                      <a class="btn danger" href="#modal-entrada-del-3">Eliminar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td><td>Concierto Rock Local</td><td>Darío Castro</td><td>15.50</td><td>emitida</td>
+                    <td><span class="status-pill ok">emitida</span></td>
+                    <td>
+                      <a class="btn" href="#modal-entrada-edit-4">Editar</a>
+                      <a class="btn danger" href="#modal-entrada-del-4">Eliminar</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td><td>Charla: Ciencia Ficción</td><td>Elena Ruiz</td><td>5.00</td><td>anulada</td>
+                    <td><span class="status-pill ok">anulada</span></td>
+                    <td>
+                      <a class="btn" href="#modal-entrada-edit-5">Editar</a>
+                      <a class="btn danger" href="#modal-entrada-del-5">Eliminar</a>
+                    </td>
+                  </tr>                           
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+  <!-- ===================== MODALES ENTRADAS ===================== -->
+  <section class="modal" id="modal-entradas-create">
+    <div class="dialog">
+      <header><h3>Nueva Entrada</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Evento <input type="text" placeholder="Concierto Rock Local"></label>
+            <label>Cliente <input type="text" placeholder="Ana Gómez"></label>
+            <label>Precio <input type="number" value="15.50"></label>
+            <label>Estado <input type="text" placeholder="emitida"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cerrar</a>
+        <a class="btn ok" href="#">Guardar (simulado)</a>
+      </footer>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-entrada-edit-1">
+    <div class="dialog">
+      <header><h3>Editar Entrada #1</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Evento <input type="text" placeholder="Concierto Rock Local"></label>
+            <label>Cliente <input type="text" placeholder="Ana Gómez"></label>
+            <label>Precio <input type="number" value="15.50"></label>
+            <label>Estado <input type="text" placeholder="emitida"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cancelar</a>
+        <a class="btn ok" href="#">Guardar cambios</a>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Clonar para entrada #2 --> 
+  <section class="modal" id="modal-entradas-create">
+    <div class="dialog">
+      <header><h3>Nueva Entrada</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Evento <input type="text" placeholder="Obra de Teatro Clásico"></label>
+            <label>Cliente <input type="text" placeholder="Benito Pérez"></label>
+            <label>Precio <input type="number" value="25.00"></label>
+            <label>Estado <input type="text" placeholder="emitida"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cerrar</a>
+        <a class="btn ok" href="#">Guardar (simulado)</a>
+      </footer>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-entrada-edit-2">
+    <div class="dialog">
+      <header><h3>Editar Entrada #2</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Evento <input type="text" placeholder="Obra Teatro Clásico"></label>
+            <label>Cliente <input type="text" placeholder="Benito Pérez"></label>
+            <label>Precio <input type="number" value="25.00"></label>
+            <label>Estado <input type="text" placeholder="emitida"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cancelar</a>
+        <a class="btn ok" href="#">Guardar cambios</a>
+      </footer>
+    </div>
+  </section>
+
+<!-- Clonar para entrada #3 --> 
+  <section class="modal" id="modal-entradas-create">
+    <div class="dialog">
+      <header><h3>Nueva Entrada</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Evento <input type="text" placeholder="Stand-up Comedy Show"></label>
+            <label>Cliente <input type="text" placeholder="Carla Diaz"></label>
+            <label>Precio <input type="number" value="10.00"></label>
+            <label>Estado <input type="text" placeholder="emitida"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cerrar</a>
+        <a class="btn ok" href="#">Guardar (simulado)</a>
+      </footer>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-entrada-edit-3">
+    <div class="dialog">
+      <header><h3>Editar Entrada #3</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Evento <input type="text" placeholder="Stand-up Comedy Show"></label>
+            <label>Cliente <input type="text" placeholder="Carla Diaz"></label>
+            <label>Precio <input type="number" value="10.00"></label>
+            <label>Estado <input type="text" placeholder="emitida"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cancelar</a>
+        <a class="btn ok" href="#">Guardar cambios</a>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Clonar para entrada #4 --> 
+  <section class="modal" id="modal-entradas-create">
+    <div class="dialog">
+      <header><h3>Nueva Entrada</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Evento <input type="text" placeholder="Concierto Rock"></label>
+            <label>Cliente <input type="text" placeholder="Dario Castro"></label>
+            <label>Precio <input type="number" value="15.50"></label>
+            <label>Estado <input type="text" placeholder="emitida"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cerrar</a>
+        <a class="btn ok" href="#">Guardar (simulado)</a>
+      </footer>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-entrada-edit-4">
+    <div class="dialog">
+      <header><h3>Editar Entrada #4</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Evento <input type="text" placeholder="Concierto Rock"></label>
+            <label>Cliente <input type="text" placeholder="Dario Castro"></label>
+            <label>Precio <input type="number" value="15.50"></label>
+            <label>Estado <input type="text" placeholder="emitida"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cancelar</a>
+        <a class="btn ok" href="#">Guardar cambios</a>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Clonar para entrada #5 --> 
+  <section class="modal" id="modal-entradas-create">
+    <div class="dialog">
+      <header><h3>Nueva Entrada</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Evento <input type="text" placeholder="Charla: Ciencia Ficción"></label>
+            <label>Cliente <input type="text" placeholder="Elena Ruiz"></label>
+            <label>Precio <input type="number" value="5.00"></label>
+            <label>Estado <input type="text" placeholder="anulada"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cerrar</a>
+        <a class="btn ok" href="#">Guardar (simulado)</a>
+      </footer>
+    </div>
+  </section>
+
+  <section class="modal" id="modal-entrada-edit-5">
+    <div class="dialog">
+      <header><h3>Editar Entrada #5</h3></header>
+      <div class="content">
+        <form>
+          <div class="form-grid">
+            <label>Evento <input type="text" placeholder="Charla: Ciencia Ficción"></label>
+            <label>Cliente <input type="text" placeholder="Elena Ruiz"></label>
+            <label>Precio <input type="number" value="5.00"></label>
+            <label>Estado <input type="text" placeholder="anulada"></label>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <a class="btn" href="#">Cancelar</a>
+        <a class="btn ok" href="#">Guardar cambios</a>
+      </footer>
+    </div>
+  </section>
